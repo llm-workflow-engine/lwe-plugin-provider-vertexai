@@ -2,7 +2,7 @@
 
 Vertex AI Provider plugin for [LLM Workflow Engine](https://github.com/llm-workflow-engine/llm-workflow-engine)
 
-Access to [Google Vertex AI](https://cloud.google.com/vertex-ai/docs/generative-ai/chat/chat-prompts) text/code models.
+Access to [Google Vertex AI](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models) text/code models.
 
 ## Installation
 
