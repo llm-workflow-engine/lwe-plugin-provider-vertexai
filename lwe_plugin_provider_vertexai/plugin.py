@@ -2,13 +2,6 @@ from langchain.llms.vertexai import VertexAI
 
 from lwe.core.provider import Provider, PresetValue
 
-class CustomVertexAI(VertexAI):
-
-    @property
-    def _identifying_params(self):
-        """Get the identifying parameters."""
-        return {**{"model_name": self.model_name}, **self._default_params}
-
 class ProviderVertexai(Provider):
     """
     Access to chat Vertex AI models
@@ -36,7 +29,7 @@ class ProviderVertexai(Provider):
         return 'text-bison'
 
     def llm_factory(self):
-        return CustomVertexAI
+        return VertexAI
 
     def customization_config(self):
         return {
