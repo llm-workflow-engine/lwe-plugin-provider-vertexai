@@ -1,4 +1,4 @@
-from langchain.llms.vertexai import VertexAI
+from langchain_community.llms.vertexai import VertexAI
 
 from lwe.core.provider import Provider, PresetValue
 
