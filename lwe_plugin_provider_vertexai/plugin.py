@@ -4,7 +4,7 @@ from lwe.core.provider import Provider, PresetValue
 
 class ProviderVertexai(Provider):
     """
-    Access to chat Vertex AI models
+    Access to Vertex AI models
     """
 
     @property
