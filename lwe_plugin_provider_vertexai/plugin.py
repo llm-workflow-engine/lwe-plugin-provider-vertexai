@@ -12,22 +12,25 @@ class ProviderVertexai(Provider):
     def capabilities(self):
         return {
             'validate_models': True,
-            'models': {
-                'text-bison': {
-                    'max_tokens': 8192,
-                },
-                'code-bison': {
-                    'max_tokens': 6144,
-                },
-                'code-gecko': {
-                    'max_tokens': 2048,
-                },
-            },
         }
 
     @property
     def default_model(self):
         return 'text-bison'
+
+    @property
+    def static_models(self):
+        return {
+            'text-bison': {
+                'max_tokens': 8192,
+            },
+            'code-bison': {
+                'max_tokens': 6144,
+            },
+            'code-gecko': {
+                'max_tokens': 2048,
+            },
+        }
 
     def llm_factory(self):
         return VertexAI
